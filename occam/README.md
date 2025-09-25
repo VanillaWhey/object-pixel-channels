@@ -1,6 +1,6 @@
 # OCCAM-Wrappers
 
-This is the official repository for the paper _[Deep Reinforcement Learning via Object-Centric Attention](XXXX)_.
+This is the official repository for the paper _Plug-and-Play Object-Centric Reinforcement Learning via Masking_.
 
 This repository includes different wrappers to be used with [OCAtari](XXXX)
 to generate different object-centric masked input representations.
