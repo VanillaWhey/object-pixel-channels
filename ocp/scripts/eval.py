@@ -1,3 +1,4 @@
+import hackatari
 from hackatari import HackAtari, HumanPlayable
 import numpy as np
 import cv2
@@ -35,16 +36,25 @@ class HackAtariArgumentParser(argparse.ArgumentParser):
         # Check if `-h` or `--help` is in the arguments
         if args is None:
             args = sys.argv[1:]
+        else:
+            args = list(args)
         if '-h' in args or '--help' in args:
-            if not '-g' in args or '--game' in args:
-                print(
-                    "Call the script with a given game to get a list of available modifications.")
+            game_arg = None
+            for flag in ("-g", "--game"):
+                if flag in args:
+                    idx = args.index(flag)
+                    if idx + 1 < len(args):
+                        game_arg = args[idx + 1]
+                    break
+
+            if game_arg is None:
+                print("Call the script with a given game to get a list of available modifications.")
             else:
-                print(hackatari._available_modifications(
-                    args[args.index('-g') + 1]))
+                print(hackatari._available_modifications(game_arg))
                 print(
-                    "\n provide -h (or --help) without a game argument for the original help message.")
-                exit(0)
+                    "\nProvide -h (or --help) without a game argument for the original help message."
+                )
+                raise SystemExit(0)
 
         # Call the original `parse_args` method to display the default help
         return super().parse_args(args, namespace)

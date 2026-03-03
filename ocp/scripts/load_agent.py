@@ -2,10 +2,16 @@ from argparse import ArgumentParser
 from functools import partial
 from gzip import GzipFile
 from pathlib import Path
+import sys
 import numpy as np
 import random
 import pygame
 from functools import partial
+
+# Ensure repo root (containing ocp_cleanrl) is on sys.path when running from ocp/scripts.
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+if str(_REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(_REPO_ROOT))
 
 from ocp_cleanrl.cleanrl.architectures.loading import init_agent
 
