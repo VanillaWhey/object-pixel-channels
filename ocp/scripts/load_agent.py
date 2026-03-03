@@ -7,6 +7,8 @@ import random
 import pygame
 from functools import partial
 
+from ocp_cleanrl.cleanrl.architectures.loading import init_agent
+
 try:
     import torch
     from torch import nn
@@ -148,22 +150,16 @@ def _epsilon_greedy(obs, model, eps=0.001):
     q_val, argmax_a = model(obs).max(1)
     return argmax_a.item(), q_val
 
-
 def load_agent(opt, env=None, device="cpu"):
     pth = opt if isinstance(opt, str) else opt.path
-    if device == "cpu":
-        ckpt = torch.load(pth, map_location=torch.device('cpu'))
-    else:
-        ckpt = torch.load(pth)
-    if "ppo" in pth and env.obs_mode == "dqn":
-        agent = PPOAgent(env)
-        agent.load_state_dict(ckpt["model_weights"])
-    elif env.obs_mode == "obj":
-        agent = PPObj(env, device)
-        agent.load_state_dict(ckpt["model_weights"])
-    else:
-        return None
-
+    ckpt = torch.load(
+        pth,
+        map_location=device,
+        weights_only=False,
+    )
+    agent = init_agent(env, ckpt, device)
+    agent.to(device)
+    agent.eval()
     policy = agent.draw_action
 
     return agent, policy

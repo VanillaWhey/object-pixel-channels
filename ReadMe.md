@@ -51,7 +51,7 @@ python ocp/scripts/eval.py -g $GAME -a $MODEL_PATH -m $MODIFICATION_LIST
 To evaluate an _OCP_ Pong agent stored at _ocp/models/Pong/0/ppo_ocp.cleanrl_model_ on _lazy enemy Pong_ (i.e., the opponent is not always aligned with the ball), this turns into:
 
 ```bash
-python ocp/scripts/eval.py -g Pong -wr binary -a ocp/models/Pong/0/ppo_ocp.cleanrl_model -m lazy_enemy
+python ocp/scripts/eval.py -g Pong -wr object_channels+pixels -a ocp/models/Pong/0/ppo_ocp.cleanrl_model -m lazy_enemy
 ```
 
 Due to space constraints, we can only provide agents trained on Pong.

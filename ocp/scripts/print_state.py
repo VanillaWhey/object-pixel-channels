@@ -45,8 +45,8 @@ def run_environment(env_id, obs_mode, seed, frameskip, modifs):
     env.close()
 
     if obs_mode == "dqn":
-        obs = obs[0]
-    return np.concatenate(obs, axis=1)
+        return obs[0]
+    return np.concatenate(obs[:len(obs)//4], axis=1)
 
 
 def save_and_display_image(obs, filename):

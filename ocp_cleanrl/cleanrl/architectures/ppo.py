@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 from torch.distributions.categorical import Categorical
 
-from common import Predictor, layer_init, NormalizeImg
+from .common import Predictor, layer_init, NormalizeImg
 
 
 class PPODefault(Predictor):

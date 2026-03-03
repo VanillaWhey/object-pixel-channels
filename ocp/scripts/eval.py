@@ -123,7 +123,7 @@ def main():
             episode_reward = 0
 
             while not done:
-                action = policy(torch.Tensor(obs).unsqueeze(0))[0]
+                action = policy(torch.Tensor(obs).unsqueeze(0)).item()
                 obs, reward, terminated, truncated, _ = env.step(action)
 
                 episode_reward += reward
