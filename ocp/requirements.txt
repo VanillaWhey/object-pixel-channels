@@ -8,3 +8,4 @@ pygame==2.1.0
 rliable==1.2.0
 stable_baselines3==2.5.0
 torch==2.6.0
+rtpt==0.0.4
