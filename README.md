@@ -14,21 +14,21 @@ as they provide a consistent object extraction that is easy to use for Atari gam
 as well as an easy way to adapt and create perturbations.
 
 The code appendix consists of the following two repositories:
-* The training repository based on CleanRL: `ocp_cleanrl`
-* The code for the wrappers constituting the primary method: `ocp`
+* The training repository based on CleanRL: `opc_cleanrl`
+* The code for the wrappers constituting the primary method: `opc`
 
 ### Installation
 Set up a Python 3.9 environment. 
 
 Install the requirements for the training:
 ```bash
-cd ocp_cleanrl
+cd opc_cleanrl
 pip install -r requirements.txt
 cd ..
 ```
-Then install OCP:
+Then install OPC:
 ```bash
-cd ocp
+cd opc
 pip install -r requirements.txt
 pip install .
 cd ..
@@ -36,7 +36,7 @@ cd ..
 
 ### Test it yourself!
 To test the approach, we provide a small set of models that can be used with the provided run,
-print, and evaluation scripts (see scripts folder in the `ocp` repository) to visualize the results.
+print, and evaluation scripts (see scripts folder in the `opc` repository) to visualize the results.
 With the scripts, you can measure the performance reported in the paper and test other perturbations and games.
 Our training is based on a slight adaptation of the CleanRL framework (Huang et al. 2022). 
 
@@ -44,23 +44,23 @@ To run the evaluation script with the correct perturbations:
 
 
 ```
-python ocp/scripts/eval.py -g $GAME -a $MODEL_PATH -m $MODIFICATION_LIST
+python opc/scripts/eval.py -g $GAME -a $MODEL_PATH -m $MODIFICATION_LIST
 ```
 
 
-To evaluate an _OCP_ Pong agent stored at _ocp/models/Pong/0/ppo_ocp.cleanrl_model_ on _lazy enemy Pong_ (i.e., the opponent is not always aligned with the ball), this turns into:
+To evaluate an _OPC_ Pong agent stored at _opc/models/Pong/0/ppo_opc.cleanrl_model_ on _lazy enemy Pong_ (i.e., the opponent is not always aligned with the ball), this turns into:
 
 ```bash
-python ocp/scripts/eval.py -g Pong -wr object_channels+pixels -a ocp/models/Pong/0/ppo_ocp.cleanrl_model -m lazy_enemy
+python opc/scripts/eval.py -g Pong -wr object_channels+pixels -a opc/models/Pong/0/ppo_opc.cleanrl_model -m lazy_enemy
 ```
 
 Due to space constraints, we can only provide agents trained on Pong.
 
 ### Training
-To start a training run, you can choose from `ppo_arari_ocp.py` and `rainbow_atari_ocp.py`. 
-The observation mode (`--obs-mode`) can be set to any of `dqn`, `object_channels`, `object_channels+pixels` for OCP, and `obj`, where with `obj`, a `--architecture PPO_OBJ` is necessary instead of `PPO`, e.g.,
+To start a training run, you can choose from `ppo_arari_opc.py` and `rainbow_atari_opc.py`. 
+The observation mode (`--obs-mode`) can be set to any of `dqn`, `object_channels`, `object_channels+pixels` for OPC, and `obj`, where with `obj`, a `--architecture PPO_OBJ` is necessary instead of `PPO`, e.g.,
 ```bash
-python ocp_cleanrl/cleanrl/ppo_atari_ocp.py --env-id ALE/Pong-v5 --obs_mode object_channels+pixels --architecture PPO
+python opc_cleanrl/cleanrl/ppo_atari_opc.py --env-id ALE/Pong-v5 --obs_mode object_channels+pixels --architecture PPO
 ```
 
 Further details can be found in the respective `README.md` files of the two repositories.
