@@ -13,7 +13,7 @@ _REPO_ROOT = Path(__file__).resolve().parents[2]
 if str(_REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(_REPO_ROOT))
 
-from ocp_cleanrl.cleanrl.architectures.loading import init_agent
+from opc_cleanrl.cleanrl.architectures.loading import init_agent
 
 try:
     import torch
