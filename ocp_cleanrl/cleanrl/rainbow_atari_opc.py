@@ -85,7 +85,7 @@ class Args:
     # Tracking (Logging and monitoring configurations)
     track: bool = False
     """if toggled, this experiment will be tracked with Weights and Biases"""
-    wandb_project_name: str = "OCP"
+    wandb_project_name: str = "OPC"
     """the wandb's project name"""
     wandb_entity: str = None
     """the entity (team) of wandb's project"""
