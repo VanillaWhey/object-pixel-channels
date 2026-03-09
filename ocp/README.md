@@ -29,7 +29,7 @@ while not done:
 ```
 
 ## Test Setup
-First test if the Backend is set up correctly
+First, we test if the Backend is set up correctly
 
 ``
 python scripts/run.py -g Pong -hu
