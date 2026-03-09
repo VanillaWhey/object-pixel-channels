@@ -5,11 +5,11 @@ We provide full experimental details to facilitate reproducibility,
 including hyperparameter configurations, random seeds, and training scripts.
 Each model is trained with three independent seeds (0, 1, 2) to ensure statistical
 robustness and account for variance in reinforcement learning training.
-Our implementation follows the CleanRL framework (Huang et al. 2022b),
+Our implementation follows the CleanRL framework (Huang et al. 2022),
 a well-established reinforcement learning library designed for transparency,
 simplicity, and ease of replication.
 
-Our masking approaches are implemented as wrappers for the OCAtari/HackAtari environments (Delfosse et al. 2024a, 2025),
+Our masking approaches are implemented as wrappers for the OCAtari/HackAtari environments (Delfosse et al. 2024, 2025),
 as they provide a consistent object extraction that is easy to use for Atari games,
 as well as an easy way to adapt and create perturbations.
 
@@ -38,7 +38,7 @@ cd ..
 To test the approach, we provide a small set of models that can be used with the provided run,
 print, and evaluation scripts (see scripts folder in the `ocp` repository) to visualize the results.
 With the scripts, you can measure the performance reported in the paper and test other perturbations and games.
-Our training is based on a slight adaptation of the CleanRL framework (Huang et al. 2022b). 
+Our training is based on a slight adaptation of the CleanRL framework (Huang et al. 2022). 
 
 To run the evaluation script with the correct perturbations:
 
@@ -67,11 +67,11 @@ Further details can be found in the respective `README.md` files of the two repo
 
 ## References
 Delfosse, Q.; Blüml, J.; Gregori, B.; Sztwiertnia, S.; and
-Kersting, K. 2024a. OCAtari: Object-Centric Atari 2600 Reinforcement Learning Environments. _Reinforcement Learning Journal_.
+Kersting, K. 2024. OCAtari: Object-Centric Atari 2600 Reinforcement Learning Environments. _Reinforcement Learning Journal_.
 
 Delfosse, Q.; Blüml, J.; Tatai, F.; Vincent, T.; Gregori, B.;
 Dillies, E.; Peters, J.; Rothkopf, C.; and Kersting, K. 2025.
 Deep Reinforcement Learning Agents are not even close to Human Intelligence. arXiv:2505.21731.
 
 Huang, S.; Dossa, R. F. J.; Ye, C.; Braga, J.; Chakraborty, D.;
-Mehta, K.; and Ara´ujo, J. G. 2022b. CleanRL: High-quality Single-file Implementations of Deep Reinforcement Learning Algorithms. _Journal of Machine Learning Research_
+Mehta, K.; and Ara´ujo, J. G. 2022. CleanRL: High-quality Single-file Implementations of Deep Reinforcement Learning Algorithms. _Journal of Machine Learning Research_
