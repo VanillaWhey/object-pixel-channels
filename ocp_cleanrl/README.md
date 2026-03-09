@@ -1,4 +1,4 @@
-# OCP-CleanRL
+# OPC-CleanRL
 
 This fork enables the usage of OCAtari and HackAtari wrappers for Gymnasium instead of pure Gymnasium. OCAtari and HackAtari offer advanced wrappers that extract and use object-centered representations, enabling more interpretable observations and potentially improving training efficiency compared to raw pixel-based inputs. The goal is to use object-centered input representations instead of pure pixel-based ones. Currently, our experiments focus on the prominent Atari environment, particularly games like Pong, Breakout, and Space Invaders, to evaluate the effectiveness of object-centered representations.
 
@@ -44,7 +44,7 @@ We keep this fork up to date with the original CleanRL master branch to enable f
 
 ---
 
-## Getting Started with OCP-CleanRL
+## Getting Started with OPC-CleanRL
 
 ### Prerequisites
 - Python == 3.9
@@ -55,14 +55,14 @@ We keep this fork up to date with the original CleanRL master branch to enable f
 1. **Install dependencies**
 
    ```bash
-   cd ocp_cleanrl
+   cd opc_cleanrl
    pip install -r requirements.txt
    ```
 
 2. **Start a training run**
 
    ```bash
-   python cleanrl/ppo_atari_ocp.py --env-id ALE/Pong-v5 --obs_mode object_channels --architecture PPO
+   python cleanrl/ppo_atari_opc.py --env-id ALE/Pong-v5 --obs_mode object_channels --architecture PPO
    ```
 
 ---
@@ -72,14 +72,14 @@ We keep this fork up to date with the original CleanRL master branch to enable f
 You can track the results of training runs using [Weights and Biases](XXXX): W&B allows you to visualize key metrics, compare runs across different experiments, and easily share results with collaborators. For instance, you can monitor training progress, analyze model performance, and debug issues more effectively using W&B's interactive dashboards.
 
 ```bash
-python cleanrl/ppo_atari_ocp.py \
+python cleanrl/ppo_atari_opc.py \
   --env-id ALE/${game_name}-v5 \
   --obs_mode object_channels+pixels \
   --architecture PPO \
   --track \
   --capture_video \
   --wandb-project-name OCCAM \
-  --exp-name "OCP_PPO"
+  --exp-name "OPC_PPO"
 ```
 
 Additional W&B settings can be adjusted directly in the training scripts.
@@ -96,7 +96,7 @@ If you have any questions or need support, feel free to reach out by creating an
 - Enable envpool and more methods to use object-centered inputs
 
 ### Contributing
-We welcome contributions to OCP-CleanRL! If you'd like to contribute:
+We welcome contributions to OPC-CleanRL! If you'd like to contribute:
 1. Fork the repository and create a new branch for your feature or bugfix.
 2. Follow the existing coding style and add relevant tests.
 3. Submit a pull request and include a detailed description of your changes.
