@@ -3,13 +3,13 @@
 This fork enables the usage of OCAtari and HackAtari wrappers for Gymnasium instead of pure Gymnasium. OCAtari and HackAtari offer advanced wrappers that extract and use object-centered representations, enabling more interpretable observations and potentially improving training efficiency compared to raw pixel-based inputs. The goal is to use object-centered input representations instead of pure pixel-based ones. Currently, our experiments focus on the prominent Atari environment, particularly games like Pong, Breakout, and Space Invaders, to evaluate the effectiveness of object-centered representations.
 
 > **ℹ️ Support for Gymnasium and v5**  
-> [Farama-Foundation/Gymnasium](XXXX) is the next generation of [`openai/gym`](XXXX) that will continue to be maintained and introduce new features. Please see their [announcement](XXXX) for further details. CleanRL has already migrated to `gymnasium` (see [vwxyzjn/cleanrl#277](XXXX)). Primarily, we base our training on the new v5 versions of the Atari games; see [ALE-Farama](XXXX).
+> [Farama-Foundation/Gymnasium](https://github.com/Farama-Foundation/Gymnasium) is the next generation of [`openai/gym`](https://github.com/openai/gym) that will continue to be maintained and introduce new features. Please see their [announcement](https://farama.org/Announcing-The-Farama-Foundation) for further details. CleanRL has already migrated to `gymnasium` (see [vwxyzjn/cleanrl#277](https://github.com/vwxyzjn/cleanrl/pull/277)). Primarily, we base our training on the new v5 versions of the Atari games; see [ALE-Farama](https://ale.farama.org/environments/).
 
 ---
 
 ## About OCAtari
 
-You can find the OCAtari repository at [OCAtari GitHub](XXXX).
+You can find the OCAtari repository at [OCAtari GitHub](https://github.com/BluemlJ/OCAtari).
 
 OCAtari is a specialized wrapper designed for Atari environments that transforms pixel-based observations into object-centered representations. This allows agents to interact with the environment using more interpretable and structured inputs. By extracting meaningful object-level features, OCAtari enhances the efficiency and robustness of reinforcement learning models, especially in tasks where pixel-level noise can hinder performance.
 
@@ -24,12 +24,12 @@ CleanRL is a Deep Reinforcement Learning library that provides high-quality, sin
   - For example, `ppo_atari.py` has only 340 lines of code but contains all implementation details on how PPO works with Atari games. This makes it a great reference implementation for those who do not want to read an entire modular library.
 
 - **📊 Benchmarked Implementations**
-  - Explore 7+ algorithms and 34+ games at [CleanRL Benchmarks](XXXX).
+  - Explore 7+ algorithms and 34+ games at [CleanRL Benchmarks](https://benchmark.cleanrl.dev).
 
 - **📈 TensorBoard Logging**
 - **🪛 Local Reproducibility via Seeding**
 - **🎮 Gameplay Video Capturing**
-- **🧫 Experiment Management with [Weights and Biases](XXXX)**
+- **🧫 Experiment Management with [Weights and Biases](https://wandb.ai/site)**
 - **💸 Cloud Integration**
   - Docker and AWS support for seamless scaling.
 
@@ -69,7 +69,7 @@ We keep this fork up to date with the original CleanRL master branch to enable f
 
 ## Tracking Results with W&B
 
-You can track the results of training runs using [Weights and Biases](XXXX): W&B allows you to visualize key metrics, compare runs across different experiments, and easily share results with collaborators. For instance, you can monitor training progress, analyze model performance, and debug issues more effectively using W&B's interactive dashboards.
+You can track the results of training runs using [Weights and Biases](https://wandb.ai/): W&B allows you to visualize key metrics, compare runs across different experiments, and easily share results with collaborators. For instance, you can monitor training progress, analyze model performance, and debug issues more effectively using W&B's interactive dashboards.
 
 ```bash
 python cleanrl/ppo_atari_opc.py \
@@ -88,7 +88,7 @@ Additional W&B settings can be adjusted directly in the training scripts.
 
 ## Next Steps and Contributing
 
-If you have any questions or need support, feel free to reach out by creating an issue on the [GitHub repository](XXXX).
+If you have any questions or need support, feel free to reach out by creating an issue on the [GitHub repository](https://github.com/VanillaWhey/object-pixel-channels).
 
 ### Next Steps
 - Experiment with different Atari environments to explore object-centered representations further.

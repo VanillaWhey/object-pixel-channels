@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "Please cite as:"
+authors:
+- family-names: "Blueml"
+  given-names: "Jannis"
+- family-names: "Derstroff"
+  given-names: "Cedric"
+- family-names: "Dillies"
+  given-names: "Elisabeth"
+- family-names: "Delfosse"
+  given-names: "Quentin"
+- family-names: "Kersting"
+  given-names: "Kristian"
+title: "Object and Pixel Channels"
+version: 1.0.0
+# date-released: 2025-04-03
+url: "https://github.com/VanillaWhey/OCAtariWrappers"
+preferred-citation:
+  type: article
+  title: "Do Object Channels Improve Robustness in Deep Reinforcement Learning?"
+  authors:
+  - family-names: "Blueml"
+    given-names: "Jannis"
+  #   orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "Derstroff"
+    given-names: "Cedric"
+  #   orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "Dillies"
+    given-names: "Elisabeth"
+  #   orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "Delfosse"
+    given-names: "Quentin"
+  #   orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "Kersting"
+    given-names: "Kristian"
+  #   orcid: "https://orcid.org/0000-0000-0000-0000"
+#   doi: "10.48550/arXiv.2504.03024"
+  journal: "Transactions on Machine Learning Research"
+  identifiers:
+  url: "https://arxiv.org/abs/2504.03024"
+  month: 4
+  start: 1 # First page number
+  end: 26 # Last page number
+#   issue: 1
+#   volume: 1
+  year: 2026

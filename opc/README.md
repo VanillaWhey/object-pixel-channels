@@ -1,6 +1,6 @@
 # OCATARI-Wrappers
 
-This repository includes the wrappers to be used with [OCAtari](XXXX)
+This repository includes the wrappers to be used with [OCAtari](https://github.com/k4ntz/OC_Atari)
 to generate object channel input representations.
 
 ## Install

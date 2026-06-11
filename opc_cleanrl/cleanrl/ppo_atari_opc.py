@@ -1,4 +1,3 @@
-# docs and experiment results can be found at XXXX
 import os
 import sys
 import tyro
