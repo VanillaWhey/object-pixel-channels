@@ -1,5 +1,8 @@
 # Do Object Channels Improve Robustness in Deep Reinforcement Learning?
-## Supplementary Materials
+
+This is the official repository of [TODO insert citation with link]().
+
+[TODO link blog post]()
 
 We provide full experimental details to facilitate reproducibility,
 including hyperparameter configurations, random seeds, and training scripts.
@@ -13,11 +16,11 @@ Our masking approaches are implemented as wrappers for the OCAtari/HackAtari env
 as they provide a consistent object extraction that is easy to use for Atari games,
 as well as an easy way to adapt and create perturbations.
 
-The code appendix consists of the following two repositories:
+This repository consists of the following two directories:
 * The training repository based on CleanRL: `opc_cleanrl`
 * The code for the wrappers constituting the primary method: `opc`
 
-### Installation
+## Installation
 Set up a Python 3.9 environment. 
 
 Install the requirements for the training:
@@ -34,7 +37,7 @@ pip install .
 cd ..
 ```
 
-### Test it yourself!
+## Test it yourself!
 To test the approach, we provide a small set of models that can be used with the provided run,
 print, and evaluation scripts (see scripts folder in the `opc` repository) to visualize the results.
 With the scripts, you can measure the performance reported in the paper and test other perturbations and games.
@@ -64,6 +67,19 @@ python opc_cleanrl/cleanrl/ppo_atari_opc.py --env-id ALE/Pong-v5 --obs_mode obje
 ```
 
 Further details can be found in the respective `README.md` files of the two repositories.
+
+## Citing this work
+If you are using _OPC_ for your scientific publications, please cite us:
+```bibtex
+@article{Blueml_Do_Object_Channels_2026,
+    author = {Blueml, Jannis and Derstroff, Cedric and Dillies, Elisabeth and Delfosse, Quentin and Kersting, Kristian},
+    journal = {Transactions on Machine Learning Research},
+    pages = {1--26},
+    title = {Do Object Channels Improve Robustness in Deep Reinforcement Learning?},
+    url = {https://arxiv.org/abs/2504.03024},
+    year = {2026}
+}
+```
 
 ## References
 Delfosse, Q.; Blüml, J.; Gregori, B.; Sztwiertnia, S.; and
