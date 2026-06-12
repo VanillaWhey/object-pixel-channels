@@ -2,7 +2,9 @@
 
 This is the official repository of [TODO insert citation with link]().
 
-[TODO link blog post]()
+You can also read more in our [blog post](https://www.aiml.informatik.tu-darmstadt.de/people/jblueml/blog_occam/OPC_blog.html).
+
+---
 
 We provide full experimental details to facilitate reproducibility,
 including hyperparameter configurations, random seeds, and training scripts.
