@@ -37,7 +37,7 @@ preferred-citation:
 #   doi: "10.48550/arXiv.2504.03024"
   journal: "Transactions on Machine Learning Research"
   identifiers:
-  url: "Do Object Channels Improve Robustness in Deep Reinforcement Learning?"
+  url: "https://openreview.net/forum?id=7BFbso4B3R"
   month: 6
 #   start: 1 # First page number
 #   end: 26 # Last page number
