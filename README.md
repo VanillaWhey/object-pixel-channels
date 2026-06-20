@@ -1,6 +1,6 @@
 # Do Object Channels Improve Robustness in Deep Reinforcement Learning?
 
-This is the official repository of [TODO insert citation with link]().
+This is the official repository of [Do Object Channels Improve Robustness in Deep Reinforcement Learning?](https://openreview.net/forum?id=7BFbso4B3R).
 
 You can also read more in our [blog post](https://www.aiml.informatik.tu-darmstadt.de/people/jblueml/blog_occam/OPC_blog.html).
 
@@ -73,13 +73,13 @@ Further details can be found in the respective `README.md` files of the two repo
 ## Citing this work
 If you are using _OPC_ for your scientific publications, please cite us:
 ```bibtex
-@article{Blueml_Do_Object_Channels_2026,
-    author = {Blueml, Jannis and Derstroff, Cedric and Dillies, Elisabeth and Delfosse, Quentin and Kersting, Kristian},
-    journal = {Transactions on Machine Learning Research},
-    pages = {1--26},
-    title = {Do Object Channels Improve Robustness in Deep Reinforcement Learning?},
-    url = {https://arxiv.org/abs/2504.03024},
-    year = {2026}
+@article{blueml2026opc,
+    title={Do Object Channels Improve Robustness in Deep Reinforcement Learning?},
+    author={Jannis Blüml and Cedric Derstroff and Bjarne Gregori and Elisabeth Dillies and Quentin Delfosse and Kristian Kersting},
+    journal={Transactions on Machine Learning Research},
+    issn={2835-8856},
+    year={2026},
+    url={https://openreview.net/forum?id=7BFbso4B3R},
 }
 ```
 

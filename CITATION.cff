@@ -37,10 +37,11 @@ preferred-citation:
 #   doi: "10.48550/arXiv.2504.03024"
   journal: "Transactions on Machine Learning Research"
   identifiers:
-  url: "https://arxiv.org/abs/2504.03024"
-  month: 4
-  start: 1 # First page number
-  end: 26 # Last page number
+  url: "Do Object Channels Improve Robustness in Deep Reinforcement Learning?"
+  month: 6
+#   start: 1 # First page number
+#   end: 26 # Last page number
 #   issue: 1
 #   volume: 1
+  issn: "2835-8856"
   year: 2026
